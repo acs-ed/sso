@@ -13,3 +13,139 @@
 
 
 __>
+
+
+<div class="container">
+ 
+  <ul class="main-slider">
+    <li class="slide" id="slide-1">
+      <figure>
+        <img src="画像URL">
+      </figure>
+      <div class="meta">
+        <p class="title">スライドタイトル</p>
+        <p class="desc">概要など</p>
+      </div>
+    </li>
+ 
+    <!-- 以後、スライド(li)を固有のIDを付けて必要なだけ記述 -->
+ 
+  </ul>
+ 
+  <ul class="thumbnail-slider" role="navigation">
+    <li class="slide">
+      <a href="#slide-1">
+        <figure>
+          <img src="画像URL">
+        </figure>
+      </a>
+    </li>
+ 
+    <!-- 以後、メインスライダーと対になる数だけ記述 -->
+ 
+  </ul>
+ 
+</div>
+
+<style>
+
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+ 
+ 
+.container{
+  position:relative;
+  margin:0 auto;
+  height:40vw;
+  display:flex;
+  justify-content:center;
+}
+ 
+.main-slider{
+  position:relative;
+  width:74vw;
+  height:100%;
+  overflow:hidden;
+}
+ 
+.thumbnail-slider{
+  position:relative;
+  width:26vw;
+  height:100%;
+  line-height:0;
+  overflow-y:auto; /* 垂直方向のスクロールを許可 */
+}
+ 
+.thumbnail-slider .slide{
+  position:relative;
+  height:20%;  /* 5枚まで一度に表示 */
+  overflow:hidden;
+}
+ 
+.slide{
+  figure{
+    height:100%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+ 
+/* アクティブなスライド */
+.main-slider .slide:target{
+  z-index:3; /* 最前面にする */
+}
+ 
+/* アニメーションで画像を表示 */
+.main-slider .slide:target figure img{
+  animation: show 2.2s ease forwards;
+}
+
+</style>
