@@ -2,80 +2,74 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>5-2-1 3本線が×に</title>
+<title>5-2-2 2本線が×に</title>
 <meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/css/5-2-1.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-2/css/5-2-2.css">
 </head>
 <body>
-<div class="openbtn1"><span></span><span></span><span></span></div>
-<p class="lead">5-2-1<br>3本線が×に</p>
+<div class="openbtn2"><span></span><span></span></div>
+<p class="lead">5-2-2<br>2本線が×に</p>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/js/5-2-1.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-2/js/5-2-2.js"></script>
 </body>
 </html>
 <style>
 
 @charset "utf-8";
 /*==================================================
-　5-2-1 3本線が×に
+　5-2-2 2本線が×に
 ===================================*/
+
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
-.openbtn1{
+.openbtn2{
 position: relative;/*ボタン内側の基点となるためrelativeを指定*/
-background:#57a2c7;
-cursor: pointer;
-    width: 50px;
+width: 50px;
     height:50px;
-border-radius: 5px;
+cursor: pointer;
+background:#fff;
 }
 
 /*ボタン内側*/
-.openbtn1 span{
+
+.openbtn2 span{
     display: inline-block;
     transition: all .4s;/*アニメーションの設定*/
     position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-background: #fff;
-  width: 45%;
+    left: 13px;
+    height: 2px;
+background-color: #666;
   }
 
-.openbtn1 span:nth-of-type(1) {
-top:15px;
+
+.openbtn2 span:nth-of-type(1) {
+top:22px;
+  width: 50%;
 }
 
-.openbtn1 span:nth-of-type(2) {
-top:23px;
-}
-
-.openbtn1 span:nth-of-type(3) {
-top:31px;
+.openbtn2 span:nth-of-type(2) {
+top:29px;
+  width:30%;
 }
 
 /*activeクラスが付与されると線が回転して×に*/
 
-.openbtn1.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
+.openbtn2.active span:nth-of-type(1) {
+    top: 20px;
+    left: 16px;
     transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+    width: 35%;
 }
 
-.openbtn1.active span:nth-of-type(2) {
-opacity: 0;/*真ん中の線は透過*/
-}
-
-.openbtn1.active span:nth-of-type(3){
-    top: 30px;
-    left: 18px;
+.openbtn2.active span:nth-of-type(2) {
+    top: 32px;
+    left: 16px;
     transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+    width: 35%;
 }
 /*========= レイアウトのためのCSS ===============*/
 
@@ -98,5 +92,11 @@ margin:20px 0 0 0;
 width:200px;
 padding: 30px;
 }
-
 </style>
+<script>
+
+$(".openbtn2").click(function () {
+    $(this).toggleClass('active');
+});
+
+</script>
