@@ -1,0 +1,93 @@
+<!-- ▇▇ ドロップメニュー▇▇-->
+<!DOCTYPE html><head><meta charset="UTF-8"><style>.my-sticky {
+ position: sticky;
+z-index: 100; 
+ top: 0;
+
+background-color: gray;
+
+}
+#dropmenu { display:flex; justify-content:center; 
+ list-style-type: none;
+ width: 960px;margin: 0 auto;
+ padding: 0;
+}
+#dropmenu li {
+ position: relative;
+ width: 26%;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+#dropmenu li a {
+ display: block;
+ margin: 0;
+ padding: 16px 0;
+ background: #ffffff;
+ color: #717171;
+ font-size: 28px;
+ font-weight: bold;
+ line-height: 1;
+ text-decoration: none;
+}
+#dropmenu li ul {
+ list-style: none;
+ position: absolute;
+ z-index: 100;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+#dropmenu li ul li {
+ overflow: hidden;
+ width: 100%;
+ height: 0;
+ color: #717171;
+ transition: .2s;
+}
+#dropmenu li ul li a {
+ padding: 13px 15px;
+ background: #ffffff;
+ text-align: left;
+}
+
+#dropmenu >li:hover >a { background: #CCD6DD }
+#dropmenu >li:hover li:hover >a { background: #CCD6DD }
+#dropmenu >li:hover >ul >li {
+ overflow: visible;
+ height: 55px;
+}
+
+ </style></head><body><ul class="my-sticky"id="dropmenu"> 
+<li><a href="#">メニュー</a><ul>
+<li><a href=" ">学会について</a></li>
+<li><a href=" ">資料提供について</a></li>
+<li><a href=" ">広報</a></li>
+<li><a href=" ">サイトマップ</a></li>
+</ul></li> 
+
+<li><a href="https://drive.google.com/drive/folders/1-dJtiGTfasUyqvrYvwaxsQAqornoVnwy">資料図書館</a>
+</li>
+
+<li><a href="#">機構組織</a><ul>
+<li><a href=" ">情報資料部</a></li>
+<li><a href=" ">物的資料部</a></li>
+</ul></li> 
+
+<li><a href="#">姉妹機構</a><ul>
+<li><a href="https://acs-ed.github.io/acs/3430141214159265358979.html">菊阿学会</a></li>
+
+<li><a href="https://acs-ed.github.io/avirytionary/">新菊阿辞典</a></li>
+<li><a href="https://acs-ed.github.io/avirypedia/">菊阿百科</a></li>
+<li><a href="https://acs-ed.github.io/aviribrary/">菊阿文庫</a></li>
+
+<li><a href="#">倫義協振会</a></li>
+<li><a href="https://ilrn00.wixsite.com/iaofficial">関皇省</a></li>
+</ul></li>
+
+ </ul>
+</body>
+
+<!-- ▇▇ ドロップメニュー終了▇▇-->
