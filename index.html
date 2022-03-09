@@ -213,7 +213,7 @@ justify-content: center; align-items: center;
 <div class="boxa" style="background:#fafafa; padding:20px 0px 10px 0px">
 
 <script language="JavaScript" type="text/javascript">
-function nextPage(){
+function nextPage(1){
 search=document.docsrcha.passa.value;
 location.href="https://drive.google.com/file/d/"+search;
 }
@@ -223,7 +223,7 @@ style="display:inline;">
 <form name="docsrcha" style="display: inline;">
   <font size="5" face="sans-serif"></font> <font size="5">
  <input type="search" name="passa" placeholder="33桁の保管番号を入力して検索" style="width: 450pt; height: 50pt; font-size:100%; display: inline;"></font>
-<input type="button"  value="閲覧" onClick="nextPage();" style="width: 90pt; height: 50pt; font-size:100%; display: inline;">
+<input type="button"  value="閲覧" onClick="nextPage(1);" style="width: 90pt; height: 50pt; font-size:100%; display: inline;">
 </div>
 
 <style>.boxa {
