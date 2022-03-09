@@ -201,7 +201,7 @@ justify-content: center; align-items: center;
  }
  </style>
 
-統合保管番号から資料を検索できます。なお、機構が保管している全ての画像･動画は、Google社が指定した統合保管番号が指定してあります。
+統合保管番号から資料を検索できます。なお、機構が保管している全ての画像･動画は、Google社が指定した33桁の統合保管番号が指定してあります。
 （例: 15kGKOHqOwU8oFLV0zlDdvh6-8pRK2y3I）
 
 <br>
@@ -210,15 +210,15 @@ justify-content: center; align-items: center;
 <div class="box" style="background:#fafafa; padding:20px 0px 10px 0px">
 <script language="JavaScript" type="text/javascript">
 function nextPage(){
-search=document.docsrch.pass4.value;
+search=document.docsrch2.pass5.value;
 location.href="https://drive.google.com/file/d/"+search;
 }
 </script>
 <img src="img/srchs0.PNG" width="7%"
 style="display:inline;">
-<form name="docsrch" style="display: inline;">
+<form name="docsrch2" style="display: inline;">
   <font size="5" face="sans-serif"></font> <font size="5">
- <input type="search" name="pass4" placeholder="33桁の保管番号を入力して検索" style="width: 450pt; height: 50pt; font-size:100%; display: inline;"></font>
+ <input type="search" name="pass5" placeholder="33桁の保管番号を入力して検索" style="width: 450pt; height: 50pt; font-size:100%; display: inline;"></font>
 <input type="button"  value="閲覧" onClick="nextPage();" style="width: 90pt; height: 50pt; font-size:100%; display: inline;">
 </div>
 
