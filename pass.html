@@ -19,9 +19,9 @@
 <input class="ib" type="button" value="8" onclick="add8()"> 
 <input class="ib" type="button" value="9" onclick="add9()"> 
 <br>
-<input class="iba" type="button" value="消去" onclick="add1()">
+<input class="iba" type="button" value="消去" onclick="clearTextarea()">
 <input class="ib" type="button" value="0" onclick="add0()"> 
-<input class="iba" type="button" value="認証" onclick="add3()"> 
+<input class="iba" type="button" value="認証" onClick="nextPage();"> 
 <br>
 <br>
 
@@ -100,6 +100,15 @@ function add9(){
  document.getElementById('text').value+='9';}
 function add0(){
  document.getElementById('text').value+='0';}
+
+function clearTextarea() {
+	var textareaForm = document.getElementById("text");
+  textareaForm.value = '';
+}
+function nextPage(){
+const s = document.getElementById("text");
+location.href=s+"14159265358979.html";
+}
  </script>
 
 <script>//inputで入力して値の表示
