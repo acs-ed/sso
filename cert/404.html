@@ -1,0 +1,109 @@
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-237429966-1');
+</script>
+<title>CiRX権限認証 失敗</title>
+<body style="background:#white">
+<font face="sans-serif"><div style="padding:30px 50px"><span style="color:gray; font-size:18px"> CiRX学会員権限認証サービス</span><br><center><br>
+<br><br><br><br><br><font style="font-size:55px"><b>暗証番号が確認できませんでした</b></font><br>
+<br><br><br><br><br><font style="font-size:32px">入力頂いた暗証番号は、学会の指定した番号と一致しませんでした。再度試して頂くか、学会までお問合せ下さい。<br><br>
+なお、直属の学者に限り学会普通鍵の復元が可能です。復元には試験があります。詳しくは以下の頁をご覧下さい。<br><br>
+<a href="https://acs-ed.github.io/acs/暗証番号を忘れたときは.html">学会普通鍵を忘れた場合</a>
+<br><br>
+また、この頁のアクセス数は統計されています。短期間に多くのアクセスがある場合、安全性のため、一時的にサイト全体を閉鎖する場合があります。
+
+
+
+<style>
+.ib{
+margin:35px;
+border:1px solid #444;
+font-size:85px;
+  height: 180px;
+  width: 180px;
+  position: relative;
+  display: inline-block;
+text-align: center;
+  padding: 0rem 0rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #212529;
+  border-radius: 40%;
+  background:white;
+  -webkit-appearance: none;
+}
+.iba{
+margin:35px;
+border:1px solid #444;
+font-size:55px;
+  height: 180px;
+  width: 180px;
+  position: relative;
+  display: inline-block;
+text-align: center;
+  padding: 0rem 0rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #212529;
+  border-radius: 40%;
+  background:white;
+  -webkit-appearance: none;
+}
+</style>
+<script type="text/javascript">
+ function add1(){
+ document.getElementById('text').value+='1';}
+ function add2(){
+ document.getElementById('text').value+='2';}
+function add3(){
+ document.getElementById('text').value+='3';}
+function add4(){
+ document.getElementById('text').value+='4';} 
+function add5(){
+ document.getElementById('text').value+='5';}
+function add6(){
+ document.getElementById('text').value+='6';}
+function add7(){
+ document.getElementById('text').value+='7';}
+function add8(){
+ document.getElementById('text').value+='8';}
+function add9(){
+ document.getElementById('text').value+='9';}
+function add0(){
+ document.getElementById('text').value+='0';}
+
+function clearTextarea() {
+	var textareaForm = document.getElementById("text");
+  textareaForm.value = '';
+}
+function nextPage(){
+const s = document.getElementById("text");
+const v = s.value;
+location.href=v+".html";
+}
+ </script>
+
+<script>//inputで入力して値の表示
+function showMsg(event) {
+const s = document.getElementById("text");
+const value = s.value.replace(/\\/g,"<br>").replace(/\*/g,"<font size=\"3\">");
+showarea.innerHTML = value;
+}
+//inputのクリア
+document.getElementById('text').value="";
+//表示領域のクリア
+showarea.innerHTML = "";
+//'input' イベントが発生したとき showMsgを起動させる。
+//'input' を 'change'に変えると Enter押下で showMsgを起動させることができる。
+document.getElementById('text').addEventListener('input', showMsg);
+</script>
+
+ 
+</body></html>
